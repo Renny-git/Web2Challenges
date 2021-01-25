@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body{
+background-color: cadetblue;
+color: white;
+font-family: 'Montserrat', sans-serif;
+}
+a{
+float: right;
+color: black;
+}
+span {
+display: inline-block;
+padding: 40px;
+margin: 10px;
+width: 40px;
+border-radius: 50%;
+background-color: white;
+}
+div{
+text-align: center;
+}
