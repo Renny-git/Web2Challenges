@@ -1,37 +1,51 @@
 html {
   box-sizing: border-box;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body{
+  background-color: cadetblue;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  float: right;
+  color: black;
+}
+
+.circles{
+  text-align: center;
+  transition: all 2s ease-in-out;
+}
+
+.circle {
+  display: inline-block;
+  padding: 40px;
+  margin: 10px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 2s ease-in-out;
+}
+
+.move-circles {
+  /* transform: translateY(500px); */
+  animation: scale 3000ms infinite ease-in-out;
+}
+
 @keyframes scale {
+  from {
+    transform: scale(1.0) translateY(0px);
+  }
   to {
-    transform: scale(1.3);
+    transform: scale(1.3) translateY(50%);
   }
 }
-body{
-background-color: cadetblue;
-color: white;
-font-family: 'Montserrat', sans-serif;
-}
-a{
-float: right;
-color: black;
-}
-span {
-display: inline-block;
-padding: 40px;
-margin: 10px;
-width: 40px;
-border-radius: 50%;
-background-color: white;
-}
-.circles{
-text-align: center;
-animation: scale 3000ms infinite ease-in-out;
-transition: all 2s ease-in-out;
-transform: translate(0,-100px);
-}
+
 .button {
   border: none;
   color: rgb(49, 49, 49);
